@@ -1,0 +1,2 @@
+## Possible Solutions
+* When your web app in Free SKU hits quota limits - your other apps in the same app service plan affected too. You should consider to scale up using Shared/Basic/Standard/Premium SKU
