@@ -1,2 +1,2 @@
 ## About this Detector
-* This detectors looks at the worker events for worker process start/stop events
+* This detector is a summary of all worker the process start/stop events regardless of the trigger. These events may be broken down into other appropriate detectors. 
