@@ -14,3 +14,10 @@ Sc_win32_status | Code | Description
 1236 | ERROR_CONNECTION_ABORTED | The network connection was aborted by the local system.
 121 | ERROR_SEM_TIMEOUT | The semaphore timeout period has expired.
 12002 | ERROR_INTERNET_TIMEOUT | The request has timed out.
+
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
