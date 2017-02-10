@@ -12,10 +12,10 @@
   * 64 _ERROR NETNAME DELETED_
      * Client gone. Usually a symptom of higher time taken for request. Look at the User-Agent to see if this is some kind of pinger (which tends to have lower time limits), as opposed to a browser.
   * 1236 _ERROR CONNECTION ABORTED_
-    * Transient issue when worker is unreachable from the FE. I’ve seen cases where requests got routed to this type of workers for about 9-10 minutes. Before our system realized that this is bad, and needs to be taken out.
+     * Transient issue when worker is unreachable from the FE. I’ve seen cases where requests got routed to this type of workers for about 9-10 minutes. Before our system realized that this is bad, and needs to be taken out.
   * 121 _ERROR SEM TIMEOUT_
-    * This requset took longer than 230 seconds to execute at the worker
+     * This requset took longer than 230 seconds to execute at the worker
   * 12002 _ERROR INTERNET TIMEOUT_
-    * This is when we couldn’t connect to worker. On our end, the moment we see this error happening, we take steps to prevent further requests from getting routed to this worker.
+     * This is when we couldn’t connect to worker. On our end, the moment we see this error happening, we take steps to prevent further requests from getting routed to this worker.
   * 0 _ERROR SUCCESS_: The operation completed successfully.
 
