@@ -8,7 +8,7 @@
   * 12030 _ERROR INTERNET CONNECTION ABORTED_
      * W3wp terminated unexpectedly: DWAS killed w3wp because it did not terminate gracefully within 30 seconds.
      * W3wp terminated unexpectedly: App itself crashed on its own.     
-     * App calls AborTRequest() API to cancel the request. This can also be done through an URL Rewrite rule
+     * App calls AbortRequest() API to cancel the request. This can also be done through an URL Rewrite rule
   * 64 _ERROR NETNAME DELETED_
      * Client gone. Usually a symptom of higher time taken for request. Look at the User-Agent to see if this is some kind of pinger (which tends to have lower time limits), as opposed to a browser.
   * 1236 _ERROR CONNECTION ABORTED_
