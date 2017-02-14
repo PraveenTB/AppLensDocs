@@ -15,7 +15,7 @@
      * This requset took longer than 230 seconds to execute at the worker
   * _Platform Issue - Could Not Connect to Worker_ : AntaresIISLogFrontEndTable Sc_win32_status=12002
      * This is when we couldn’t connect to worker. On our end, the moment we see this error happening, we take steps to prevent further requests from getting routed to this worker.
-  * _Platform Issue - Unknown_ : AntaresIISLogWorkerTable S_reason=Request_Cancelled 
+  * _App Aborted_ : AntaresIISLogWorkerTable S_reason=Request_Cancelled 
      * Purely an App issue. App calls AbortRequest() API to cancel the request. This can also be done through an URL_Rewrite rule
   * _Platform Issue - Unknown_ : AntaresIISLogWorkerTable S_reason=Connection_Abandoned_By_ReqQueue 
      * This could be caused by various platform issues like storage volume failover
