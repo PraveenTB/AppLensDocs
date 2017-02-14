@@ -10,7 +10,7 @@
   * _Client Quit_: AntaresIISLogFrontEndTable Sc_win32_status=64
      * Client gone. Usually a symptom of higher time taken for request. Look at the User-Agent to see if this is some kind of pinger (which tends to have lower time limits), as opposed to a browser.
   * _Platform Issue - Transient Issue_: AntaresIISLogFrontEndTable Sc_win32_status=1236
-     * Transient issue when worker is unreachable from the FE. I’ve seen cases where requests got routed to this type of workers for about 9-10 minutes. Before our system realized that this is bad, and needs to be taken out.
+     * Transient issue when worker is unreachable from the FE. This issue is seen in cases where requests got routed to a worker in a bad state for some time. Before our system realized that this is bad, and needs to be taken out.
   * _Platform Issue - Slow worker_: AntaresIISLogFrontEndTable Sc_win32_status=121
      * This requset took longer than 230 seconds to execute at the worker
   * _Platform Issue - Could Not Connect to Worker_ : AntaresIISLogFrontEndTable Sc_win32_status=12002
