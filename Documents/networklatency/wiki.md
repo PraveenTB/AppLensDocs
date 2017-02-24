@@ -1,1 +1,1 @@
-This detecor finds all network calls that have high latency i.e. calls that take more than 5 secons
+This detector finds all network calls that have high latency i.e. calls that take more than 5 seconds 
